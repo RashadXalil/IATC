@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  .custom-navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      margin-left: 40px;
+    }
+    .custom-navbar-right-items {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      margin-right: 20px;
+      li {
+        margin-right: 30px;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: black;
+          transition: 0.3s linear;
+          &:hover {
+            color: blue;
+          }
+        }
+        button {
+          padding: 10px;
+          background-color: blue;
+          color: white;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  #hero-section {
+    padding-top: 100px;
+    .hero-section-content {
+      padding-top: 120px;
+      .hero-section-header {
+        margin-bottom: 20px;
+        h2 {
+          font-size: 50px;
+          font-weight: bold;
+        }
+      }
+      .hero-section-desc {
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        p {
+          color: #666;
+        }
+      }
+      .hero-section-footer {
+        margin-top: 50px;
+        .hero-section-footer-title {
+          h2 {
+            font-size: 24px;
+          }
+        }
+        .hero-section-footer-desc {
+          a {
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .hero-section-right-image {
+      width: 100%;
+      height: 600px;
+      object-fit: contain;
+      background-size: cover;
+      background-position: center;
+      background-image: url("../images/heroimage.jpg");
+    }
+  }
+  #brands-section {
+    padding-top: 100px;
+    .single-brand {
+      width: 80%;
+      line-height: 41px;
+      color: #666;
+    }
+  }
+  #about-career-section {
+    padding-top: 100px;
+    .about-career-section-image {
+      img {
+        width: 100%;
+      }
+    }
+    .about-career-section-content {
+      padding-top: 90px;
+      margin-left: 50px;
+      .about-career-section-header {
+        padding-bottom: 50px;
+        h2 {
+          font-weight: bolder;
+        }
+      }
+      .about-career-section-desc {
+        p {
+          color: #626f7f;
+          font-size: 19px;
+          line-height: 28px;
+          max-width: 800px;
+        }
+      }
+      .about-career-section-footer {
+        .cus-btn {
+          color: white;
+          padding: 10px;
+          width: 150px;
+          border: none;
+          margin-right: 10px;
+        }
+        .prim-button {
+          background-color: #0071e0;
+        }
+        .sec-button {
+          color: black;
+          font-weight: bolder;
+          color: #666;
+        }
+      }
+    }
+  }
+  #solution-section {
+    padding-top: 50px;
+    .section-header {
+      text-align: center;
+      padding-bottom: 50px;
+      h2 {
+        font-weight: bolder;
+        font-size: 50px;
+      }
+    }
+    .solution-section-content {
+      padding-right: 50px;
+      .solution-content-header {
+        h2 {
+          font-weight: bolder;
+          font-size: 40px;
+          padding-bottom: 30px;
+        }
+      }
+      .solution-content-desc {
+        p:last-child{
+          color:#666;
+          font-size: 19px;
+        }
+        a {
+          font-size: 19px;
+          text-decoration: none;
+          font-weight: bolder;
+          display: block;
+          margin-top: 100px;
+        }
+      }
+    }
+    .solution-content-image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .top-footer{
+    margin-top: 150px;
+    a{
+      display: block;
+      i{
+        color: grey;
+        font-size: 30px;
+        transition: 0.3s linear;
+        &:hover{
+          color: #0071e0;
+        }
+      }
+    }
+    .footer-link-header{
+      h2{
+        font-weight: bolder;
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+    }
+    .footer-links{
+      padding: 0;
+      li{
+        margin-bottom: 10px;
+        list-style: none;
+        a{
+          text-decoration: none;
+          color: #666;
+          transition: 0.3s linear;
+          &:hover{
+            color: #0071e0;
+            text-decoration: underline;
+          }
+        }
+        .learn-more{
+          font-weight: bolder;
+          color: #999;
+        }
+        
+      }
+    }
+  }
+  .bottom-footer{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+}
