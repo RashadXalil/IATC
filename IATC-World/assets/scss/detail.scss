@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+body {
+  transition: 0.3s linear;
+}
+header {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .custom-header {
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      height: 100px;
+      align-items: center;
+      &__left {
+        &__item {
+          font-weight: bold;
+          transition: 0.3s linear;
+        }
+      }
+      &__right {
+        &__item {
+          margin: 0;
+          cursor: pointer;
+          transition: 0.3s linear;
+          fontw &:hover {
+            color: gray;
+          }
+        }
+        #lightMode {
+          display: none;
+        }
+        #darkMode {
+          display: none;
+        }
+        .active {
+          display: block !important;
+        }
+      }
+    }
+  }
+}
+#navigation{
+    margin-top: 50px;
+    a{
+        color: black;
+        transition: 0.3s linear;
+        &:hover{
+            text-decoration: none;
+            color: lightgrey;
+        }
+    }
+}
+#single-country{
+    margin-top: 100px;
+    .country-flag{
+        margin-right: 50px;
+        img{
+            width: 100%;
+        }
+    }
+    .country-about{
+        .country-name{
+            margin-bottom: 50px;
+            h2{
+                font-weight: bolder;
+            }
+        }
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 10px;
+                font-weight: bold;
+                span{
+                    font-weight: normal;
+                }
+            }
+        }
+        .border-countries{
+            margin-top: 20px;
+            span{
+                font-weight: bold;
+                margin-right: 10px;
+            }
+            a{
+                display: inline-block;
+                padding: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                margin-right: 10px;
+                transition: 0.3s linear ;
+                color: black;
+                &:hover{
+                    text-decoration: none;
+                    color: lightgrey;
+                }
+            }
+        }
+    }
+}

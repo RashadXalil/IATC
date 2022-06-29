@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "country",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass assets/scss/style.scss -o assets/css -w",
+    "detail": "node-sass assets/scss/detail.scss -o assets/css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

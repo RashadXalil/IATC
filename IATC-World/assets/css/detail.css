@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif; }
+
+body {
+  transition: 0.3s linear; }
+
+header {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  header .custom-header__top {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center; }
+    header .custom-header__top__left__item {
+      font-weight: bold;
+      transition: 0.3s linear; }
+    header .custom-header__top__right__item {
+      margin: 0;
+      cursor: pointer;
+      transition: 0.3s linear; }
+      fontw header .custom-header__top__right__item:hover {
+        color: gray; }
+    header .custom-header__top__right #lightMode {
+      display: none; }
+    header .custom-header__top__right #darkMode {
+      display: none; }
+    header .custom-header__top__right .active {
+      display: block !important; }
+
+#navigation {
+  margin-top: 50px; }
+  #navigation a {
+    color: black;
+    transition: 0.3s linear; }
+    #navigation a:hover {
+      text-decoration: none;
+      color: lightgrey; }
+
+#single-country {
+  margin-top: 100px; }
+  #single-country .country-flag {
+    margin-right: 50px; }
+    #single-country .country-flag img {
+      width: 100%; }
+  #single-country .country-about .country-name {
+    margin-bottom: 50px; }
+    #single-country .country-about .country-name h2 {
+      font-weight: bolder; }
+  #single-country .country-about ul {
+    list-style: none; }
+    #single-country .country-about ul li {
+      margin-bottom: 10px;
+      font-weight: bold; }
+      #single-country .country-about ul li span {
+        font-weight: normal; }
+  #single-country .country-about .border-countries {
+    margin-top: 20px; }
+    #single-country .country-about .border-countries span {
+      font-weight: bold;
+      margin-right: 10px; }
+    #single-country .country-about .border-countries a {
+      display: inline-block;
+      padding: 10px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      margin-right: 10px;
+      transition: 0.3s linear;
+      color: black; }
+      #single-country .country-about .border-countries a:hover {
+        text-decoration: none;
+        color: lightgrey; }

@@ -1,0 +1,80 @@
+html {
+  --bg-color: white;
+  --font-color:black; }
+
+html[data-theme="dark"] {
+  --bg-color: #202c36;
+  --font-color:white; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif; }
+
+body {
+  transition: 0.3s linear; }
+
+header {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  header .custom-header__top {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center; }
+    header .custom-header__top__left__item {
+      font-weight: bold;
+      transition: 0.3s linear; }
+    header .custom-header__top__right__item {
+      margin: 0;
+      cursor: pointer;
+      transition: 0.3s linear; }
+      fontw header .custom-header__top__right__item:hover {
+        color: gray; }
+    header .custom-header__top__right #lightMode {
+      display: none; }
+    header .custom-header__top__right #darkMode {
+      display: none; }
+    header .custom-header__top__right .active {
+      display: block !important; }
+
+main .hero-section {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center; }
+  main .hero-section__left__item {
+    width: 480px;
+    transition: 0.3s linear;
+    height: 56px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border: none; }
+  main .hero-section__right #dropdownMenuButton {
+    width: 200px;
+    height: 56px;
+    transition: 0.3s linear;
+    cursor: pointer; }
+  main .hero-section__right__item {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+
+main .countries {
+  margin-top: 50px; }
+  main .countries a {
+    text-decoration: none; }
+    main .countries a .country__card {
+      color: var(--font-color);
+      transition: 0.3s linear;
+      box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+      border-radius: 10px;
+      border: 1px solid lightgrey;
+      margin-bottom: 10px;
+      height: 400px;
+      background-color: var(--bg-color); }
+      main .countries a .country__card__image img {
+        height: 160px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%; }
+      main .countries a .country__card__about {
+        padding: 10px; }

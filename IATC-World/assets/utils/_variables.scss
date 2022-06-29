@@ -1,0 +1,11 @@
+// Light Mode Colors
+html {
+  --bg-color: white;
+  --font-color:black;
+}
+
+// Dark Mode Colors
+html[data-theme="dark"] {
+  --bg-color: #202c36;
+  --font-color:white;
+}
