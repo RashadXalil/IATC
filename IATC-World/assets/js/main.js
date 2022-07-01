@@ -1,11 +1,11 @@
 var html = "";
-let region = "";
+let region = "all";
 var countries = "";
 let countryName = "";
 let cards = document.getElementsByClassName("country__card");
-let mainURL = new URL(`https://restcountries.com/v3.1${(countryName!="" ? `name/${countryName}` : "")}${(region!=""? `/region/${region}` : '/all')}`)
+let singleCountry = document.getElementsByTagName("a")
 function GetCountries() {
-  fetch(mainURL)
+  fetch(`https://restcountries.com/v3.1${(region!="all"? `/region/${region}` : '/all')}`)
     .then(function (response) {
       return response.json();
     })
@@ -20,8 +20,8 @@ GetCountries();
 function generateCountryCard(country) {
   countries = `
   <div class="col-lg-3 col-md-6 col-sm-12">
-  <a href="detail.html">
-  <div class="country__card">
+  <a href="detail.html?countryName=${country.name.common}">
+  <div class="country__card" id=${country.name.common.replace(" ","_")}>
     <div class="country__card__image">
       <img src="${country.flags.png}" alt="" />
     </div>
@@ -55,6 +55,13 @@ function generateCountryCard(country) {
 function generateCountryList(html) {
   let cbody = document.getElementById("countriesbody");
   cbody.innerHTML = html;
+
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].addEventListener("click",function(e){
+      console.log(cards[i])
+      history.pushState(null,null,`/?name=${this.id}`)
+    })
+  }
 }
 let darkMode = document.getElementById("darkMode")
 let lightMode = document.getElementById("lightMode")
@@ -87,20 +94,16 @@ function getCountriesByRegion(){
   let dropdownMenuButton = document.getElementById("dropdownMenuButton")
   dropdownMenuButton.addEventListener("change",function(){
     region = this.value;
+    if(this.value !="all"){
+      history.pushState(null,null,`${this.value!="all" ? `/home/?region=${this.value}` : `/home/all`}`)
+    }
+    else{
+      history.pushState(null,null,'home/all')
+    }
+    console.log(region)
     document.getElementById("countriesbody").innerHTML = "";
     html = "";
     GetCountries();
   })
 }
 getCountriesByRegion();
-
-function searchCountries(){
-  let input  = document.getElementById("searchinput");
-  input.addEventListener("keyup",function(){
-    countryName = this.value;
-    document.getElementById("countriesbody").innerHTML = "";
-    html = "";
-    GetCountries();
-  })
-}
-searchCountries();

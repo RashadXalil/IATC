@@ -43,60 +43,61 @@ header {
     }
   }
 }
-#navigation{
-    margin-top: 50px;
-    a{
-        color: black;
-        transition: 0.3s linear;
-        &:hover{
-            text-decoration: none;
-            color: lightgrey;
-        }
+#navigation {
+  margin-top: 50px;
+  a {
+    color: black;
+    transition: 0.3s linear;
+    &:hover {
+      text-decoration: none;
+      color: lightgrey;
     }
+  }
 }
-#single-country{
-    margin-top: 100px;
-    .country-flag{
-        margin-right: 50px;
-        img{
-            width: 100%;
-        }
+#single-country {
+  margin-top: 100px;
+  .country-flag {
+    margin-right: 50px;
+    img {
+      width: 100%;
     }
-    .country-about{
-        .country-name{
-            margin-bottom: 50px;
-            h2{
-                font-weight: bolder;
-            }
-        }
-        ul{
-            list-style: none;
-            li{
-                margin-bottom: 10px;
-                font-weight: bold;
-                span{
-                    font-weight: normal;
-                }
-            }
-        }
-        .border-countries{
-            margin-top: 20px;
-            span{
-                font-weight: bold;
-                margin-right: 10px;
-            }
-            a{
-                display: inline-block;
-                padding: 10px;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                margin-right: 10px;
-                transition: 0.3s linear ;
-                color: black;
-                &:hover{
-                    text-decoration: none;
-                    color: lightgrey;
-                }
-            }
-        }
+  }
+  .country-about {
+    .country-name {
+      margin-bottom: 50px;
+      h2 {
+        font-weight: bolder;
+      }
     }
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 10px;
+        font-weight: bold;
+        span {
+          font-weight: normal;
+        }
+      }
+    }
+    .border-countries {
+      margin-top: 20px;
+      span {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      a {
+        color: inherit !important;
+        display: inline-block;
+        padding: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-right: 10px;
+        transition: 0.3s linear;
+        color: black;
+        &:hover {
+          text-decoration: none;
+          color: lightgrey;
+        }
+      }
+    }
+  }
 }
